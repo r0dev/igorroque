@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"/>
+    <!--<link
+      rel="icon"
+      href="https://www.igrejabatistadafamilia.com.br/wp-content/uploads/2020/10/cropped-M2-192x192.jpg"
+      sizes="192x192"/> </!-->
+    
+    <!-- <link
+      rel="apple-touch-icon"
+      href="https://www.igrejabatistadafamilia.com.br/wp-content/uploads/2020/10/cropped-M2-180x180.jpg"
+    /> </!-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rodtti" />
+    <meta name="description" content="Página de links do cantor Igor Roque" />
+    <title>IGOR ROQUE</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img src="./assets/avatar.png" alt="Igor Roque" />
+        <p><b>Igor Roque</b></p>
+      </div>
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+      <ul>
+        <li>
+          <a href="https://wa.me/5521996839417" target="_blank"
+            >Agendas</a
+          >
+        </li>
+        <li>
+          <a href="https://www.instagram.com/igor_roque_1" target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a href="https://open.spotify.com/intl-pt/artist/64Zevud6ZejXRQjAMhlZS8?si=hUjTLR0JTE6lSFsmlKCa7w&nd=1"target="_blank"
+            >Spotify</a
+          >
+        </li>
+        <li>
+          <a href=https://www.youtube.com/@IgorRoque/ target="_blank"
+            >Youtube</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=x-Cy1QbJqDQ" target="_blank"
+            >Último vídeo lançado ♥</a
+          >
+        </li>
+      </ul>
+      <div id="social-links">
+        <a
+          href="https://instagram.com/igor_roque_1"
+          title="Instagram"
+          target="_blank"
+        >
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a
+          href="https://www.youtube.com/@IgorRoque/"
+          title="Youtube"
+          target="_blank"
+        >
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+        <a
+          href="https://wa.me/5521996839417"
+          title="Youtube"
+          target="_blank"
+        >
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+      </div>
+      <div id="dev">
+         <a
+          href="https://www.instagram.com/Rodtti"
+          title="Youtube"
+          target="_blank"
+        > <b>By: Rodtti</b>
+      </div>
+      <footer></footer>
+    </div>
+    <!--bloquear o botão direito </-->
+    <script language="javascript">
+      document.addEventListener("contextmenu", (event) =>
+        event.preventDefault()
+      )
+    </script>
+    <!--bloquear o ctrl+u </-->
+    <script>
+      document.onkeydown = function (e) {
+        if (
+          e.ctrlKey &&
+          (e.keyCode === 67 ||
+            e.keyCode === 86 ||
+            e.keyCode === 85 ||
+            e.keyCode === 117 ||
+            e.keycode === 17 ||
+            e.keycode === 85)
+        ) {
+          alert("Desenvolvido por: @rodtti")
+        }
+        return false
+      }
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
